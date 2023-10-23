@@ -1,5 +1,6 @@
+import Home from "./ui/Home";
 function App() {
-  return <div>hello vite</div>;
+  return <Home />;
 }
 
 export default App;
