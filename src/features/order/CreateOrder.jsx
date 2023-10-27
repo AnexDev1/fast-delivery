@@ -114,10 +114,10 @@ export async function action({ request }) {
       "Please provide a valid phone number. we might need it to contact you";
   if (Object.keys(errors).length > 0) return errors;
 
-  // const newOrder = await createOrder(order);
-  // console.log(newOrder);
+  const newOrder = await createOrder(order);
+  console.log(newOrder);
 
-  // return redirect(`/order/${newOrder.id}`);
-  return null;
+  return redirect(`/order/${newOrder.id}`);
+  // return null;
 }
 export default CreateOrder;
